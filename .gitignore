@@ -1,0 +1,25 @@
+# Operating systems
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Dependencies and build output
+node_modules/
+dist/
+.cache/
+
+# Local environment variables
+.env
+.env.*
+!.env.example
+
+# Netlify local files
+.netlify/
+
+# Logs
+*.log
+npm-debug.log*
