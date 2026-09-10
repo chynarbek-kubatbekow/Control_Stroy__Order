@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Ориентиры по стоимости ремонта и строительных услуг Control Stroy в Бишкеке.">
+  <title>Услуги и цены — Control Stroy</title>
+  <link rel="stylesheet" href="assets/css/style.css"><link rel="stylesheet" href="assets/css/enhancements.css">
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/menu.js" defer></script>
+  <script src="assets/js/price-calculator.js" defer></script>
+</head>
+<body class="page-prices">
+  <a class="skip-link" href="#main">К содержанию</a>
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Control Stroy — главная"><img src="assets/images/logo/control-stroy-logo.png" width="1735" height="691" alt="Control Stroy"></a>
+      <nav class="nav" id="main-nav" data-nav aria-label="Основная навигация"><ul class="nav__list"><li><a class="nav__link" href="index.html">Главная</a></li><li><a class="nav__link" href="services.html">Услуги</a></li><li><a class="nav__link" href="projects.html">Проекты</a></li><li><a class="nav__link" href="about.html">О компании</a></li><li><a class="nav__link" href="contacts.html">Контакты</a></li></ul></nav>
+      <div class="header-actions"><a class="header-phone" href="tel:+996558949488">+996 558 94 94 88<small>Бишкек. Кыргызстан</small></a><a class="button" href="contacts.html#contact-request">Обсудить Проект</a><a class="mobile-call" href="tel:+996558949488" aria-label="Позвонить">☎</a><button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Открыть меню" data-menu-toggle><span></span></button></div>
+    </div>
+  </header>
+  <div class="menu-backdrop" data-menu-backdrop></div>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <ol class="breadcrumbs"><li><a href="index.html">Главная</a></li><li>Цены</li></ol>
+        <div class="page-hero__grid"><div><p class="eyebrow">Услуги и стоимость</p><h1>Предварительные ориентиры</h1></div><p class="lead">Финальная стоимость зависит от состояния объекта, состава работ, материалов и технических решений. Точный расчёт составляется после обсуждения и осмотра.</p></div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><div><p class="eyebrow">Основные направления</p><h2>Стоимость услуг</h2></div><span class="section-head__line"></span><p class="section-head__copy">Значения XXX будут заменены после получения информации от заказчика.</p></div>
+        <div class="pricing-grid">
+          <article class="price-card price-card--accent price-card--featured"><span class="price-card__index">01</span><h3>Ремонт квартир</h3><p class="price-card__price">от <strong>$200</strong><small>за м²</small></p><ul><li>подготовительные этапы</li><li>инженерные и отделочные работы</li><li>согласованный состав работ</li></ul><a class="link-arrow" href="contacts.html">Получить расчёт</a></article>
+          <article class="price-card"><span class="price-card__index">02</span><h3>Отделочные работы</h3><p class="price-card__price">от <strong>$XXX</strong><small>за м²</small></p><ul><li>подготовка поверхностей</li><li>монтаж покрытий</li><li>малярные работы</li></ul><a class="link-arrow" href="contacts.html">Уточнить стоимость</a></article>
+          <article class="price-card"><span class="price-card__index">03</span><h3>Фасадные работы</h3><p class="price-card__price">от <strong>$XXX</strong><small>за м²</small></p><ul><li>подготовка основания</li><li>согласованный тип отделки</li><li>монтажные работы</li></ul><a class="link-arrow" href="contacts.html">Уточнить стоимость</a></article>
+          <article class="price-card"><span class="price-card__index">04</span><h3>Кровельные работы</h3><p class="price-card__price">от <strong>$XXX</strong><small>за м²</small></p><ul><li>оценка состояния</li><li>подготовка основания</li><li>монтаж кровельной системы</li></ul><a class="link-arrow" href="contacts.html">Уточнить стоимость</a></article>
+          <article class="price-card"><span class="price-card__index">05</span><h3>Сварочные работы</h3><p class="price-card__price">от <strong>$XXX</strong><small>за работу</small></p><ul><li>оценка конструкции</li><li>подготовка элементов</li><li>выполнение согласованных работ</li></ul><a class="link-arrow" href="contacts.html">Уточнить стоимость</a></article>
+          <article class="price-card"><span class="price-card__index">06</span><h3>Мебель и кухни</h3><p class="price-card__price"><strong>Индивидуально</strong></p><ul><li>замер и компоновка</li><li>материалы и фурнитура</li><li>изготовление и монтаж</li></ul><a class="link-arrow" href="contacts.html">Запросить расчёт</a></article>
+        </div>
+      </div>
+    </section>
+    <section class="section section--dark">
+      <div class="container calculator" data-calculator>
+        <div><p class="eyebrow">Быстрый ориентир</p><h2>Рассчитайте базовый бюджет ремонта</h2><p>Расчёт использует ориентир $200 за м² и не является окончательной сметой.</p></div>
+        <div class="calculator__panel"><label for="calc-area">Площадь помещения, м²</label><div class="calculator__control"><input id="calc-area" type="range" min="20" max="500" step="5" value="60" data-calc-range><input type="number" min="20" max="500" step="5" value="60" aria-label="Площадь числом" data-calc-number></div><p class="calculator__result">Ориентир: <strong data-calc-result>$12 000</strong></p><a class="button" href="contacts.html">Получить точный расчёт</a></div>
+      </div>
+    </section>
+    <section class="section"><div class="container"><div class="section-head"><div><p class="eyebrow">Как формируется сумма</p><h2>Что влияет на смету</h2></div></div><div class="document-list"><div class="document-item"><strong>Исходное состояние</strong><span>Новостройка, вторичный объект или помещение после демонтажа.</span></div><div class="document-item"><strong>Состав работ</strong><span>Количество этапов, инженерные решения и сложность узлов.</span></div><div class="document-item"><strong>Материалы</strong><span>Категория покрытий, мебели, камня и комплектующих.</span></div><div class="document-item"><strong>Особенности объекта</strong><span>Площадь, доступ, высота, геометрия помещения и технические ограничения.</span></div></div></div></section>
+  </main>
+  <footer class="site-footer"></footer>
+</body>
+</html>

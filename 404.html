@@ -1,20 +1,48 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
-    <title>Страница не найдена — Control Stroy</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-  </head>
-  <body>
-    <main class="hero">
-      <div class="container">
-        <p class="eyebrow">Ошибка 404</p>
-        <h1>Страница не найдена</h1>
-        <p class="hero__text">Возможно, адрес изменился или был введён с ошибкой.</p>
-        <a class="button" href="/">Вернуться на главную</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Страница не найдена — Control Stroy</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/enhancements.css">
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/menu.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержанию</a>
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Control Stroy — главная">
+        <img src="assets/images/logo/control-stroy-logo.png" width="1735" height="691" alt="Control Stroy">
+      </a>
+      <nav class="nav" id="main-nav" data-nav aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Главная</a></li>
+          <li><a class="nav__link" href="services.html">Услуги</a></li>
+          <li><a class="nav__link" href="projects.html">Проекты</a></li>
+          <li><a class="nav__link" href="about.html">О компании</a></li>
+          <li><a class="nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a class="header-phone" href="tel:+996558949488">+996 558 94 94 88<small>Бишкек. Кыргызстан</small></a>
+        <a class="button" href="contacts.html#contact-request">Обсудить Проект</a>
+        <a class="mobile-call" href="tel:+996558949488" aria-label="Позвонить">☎</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Открыть меню" data-menu-toggle><span></span></button>
       </div>
-    </main>
-  </body>
+    </div>
+  </header>
+  <div class="menu-backdrop" data-menu-backdrop></div>
+  <main id="main" class="page-hero error-page">
+    <div class="container">
+      <p class="eyebrow">Ошибка 404</p>
+      <h1>Страница не найдена</h1>
+      <p class="lead">Возможно, адрес изменился или был введён с ошибкой.</p>
+      <a class="button" href="index.html">Вернуться на главную</a>
+    </div>
+  </main>
+  <footer class="site-footer"></footer>
+</body>
 </html>

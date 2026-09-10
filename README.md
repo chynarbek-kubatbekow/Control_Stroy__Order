@@ -1,45 +1,38 @@
-# Control Stroy
+# Control Stroy — frontend MVP
 
-Статический сайт на HTML, CSS и JavaScript. Проект можно публиковать через GitHub Pages, Netlify или любой другой сервис статического хостинга.
+Многостраничный демонстрационный сайт компании по ремонту и интерьерным решениям. Стек: HTML5, CSS3 и JavaScript без фреймворков.
 
-## Структура
+## Страницы
 
-```text
-.
-├── assets/
-│   ├── css/style.css
-│   ├── images/favicon.svg
-│   └── js/main.js
-├── 404.html
-├── index.html
-└── netlify.toml
-```
+- `index.html` — главная
+- `services.html` — услуги и FAQ
+- `prices.html` — ориентиры по ценам и калькулятор площади
+- `projects.html` — каталог с фильтрами
+- `project.html` — шаблон проекта
+- `about.html` — о компании
+- `contacts.html` — контакты и форма WhatsApp
+- `process.html` — подробный порядок работы
+- `materials.html` — гид по материалам и критериям выбора
+- `faq.html` — расширенные вопросы и ответы
+- `privacy.html` — временная политика обработки данных
+- `404.html` — страница ошибки
 
 ## Локальный запуск
 
-Самый простой вариант — открыть `index.html` в браузере. Для разработки удобнее запустить локальный сервер:
+Можно использовать расширение Live Server в VS Code или команду:
 
 ```bash
 npx serve .
 ```
 
-## GitHub
+## Публикация
 
-```bash
-git add .
-git commit -m "Initial project setup"
-git branch -M main
-git remote add origin https://github.com/USERNAME/REPOSITORY.git
-git push -u origin main
-```
+Проект готов для GitHub Pages и Netlify. Для Netlify уже добавлен `netlify.toml`: команда сборки не требуется, каталог публикации — `.`.
 
-Перед последними двумя командами создайте пустой репозиторий на GitHub и замените адрес на свой.
+## Демонстрационные данные
 
-## Netlify
+Изображения в `assets/images/generated/` созданы специально для макета и не являются фотографиями объектов Control Stroy. До запуска необходимо заменить логотип, фотографии и данные проектов, утвердить график, карту и юридический текст.
 
-1. Импортируйте GitHub-репозиторий в Netlify.
-2. Build command оставьте пустой.
-3. Publish directory укажите `.`.
-4. Нажмите Deploy.
+## Будущая интеграция с Django
 
-Файл `netlify.toml` уже содержит каталог публикации и базовые HTTP-заголовки безопасности.
+Повторяющиеся header/footer/form следует перенести в `base.html` и `includes/`. Карточки услуг и проектов готовы к циклам Django templates. Форму WhatsApp можно заменить POST-запросом на `/api/v1/leads/`, сохранив текущую HTML-структуру полей.

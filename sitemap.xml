@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TODO: заменить example.com после утверждения домена -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://example.com/</loc></url>
+  <url><loc>https://example.com/services.html</loc></url>
+  <url><loc>https://example.com/prices.html</loc></url>
+  <url><loc>https://example.com/projects.html</loc></url>
+  <url><loc>https://example.com/about.html</loc></url>
+  <url><loc>https://example.com/contacts.html</loc></url>
+  <url><loc>https://example.com/process.html</loc></url>
+  <url><loc>https://example.com/materials.html</loc></url>
+  <url><loc>https://example.com/faq.html</loc></url>
+</urlset>
